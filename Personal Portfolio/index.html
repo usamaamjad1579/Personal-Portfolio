@@ -1,0 +1,206 @@
+(<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Usama Amjad | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header class="header transparent-header">
+  <div class="container">
+    <div class="logo">Muhammad Usama Amjad</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="download-btn" href="c:\Users\Muhammad Usama Amjad\Downloads\resume.png" download><i class="fa-solid fa-download"></i> Download CV</a></li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <i id="theme-icon" class="fas fa-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Theme Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+
+  function setTheme(theme) {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+    icon.className = theme === 'dark-theme' ? 'fas fa-moon' : 'fas fa-sun';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    const current = document.body.className;
+    const nextTheme = current === 'dark-theme' ? 'light-theme' : 'dark-theme';
+    setTheme(nextTheme);
+  });
+
+  // Load saved theme on page load
+  const savedTheme = localStorage.getItem('theme') || 'light-theme';
+  setTheme(savedTheme);
+</script>
+
+
+ <!-- Hero Section -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+
+  </div>
+</section>
+
+
+  <!-- About Section -->
+<section id="about" class="section about">
+  <div class="container about-flex">
+    <div class="about-text">
+      <h2>About Me</h2>
+<p>
+ As an undergraduate student, I am pursuing a degree in Artificial Intelligence and I am well acquainted with Frontend Development. I hold a Meta Professional Frontend Developer Certification and it has enhanced my skills and industry knowledge. As an industry professional, I hold certifications with practical skills in HTML, CSS, JavaScript, React, and even in WordPress and Shopify, all of which I utilize in my practice for developing advanced, adaptive, and user-centered interfaces for the web.
+</p>
+<p>
+Over the past several years, my projects in web development encompass corporate sites, freelance jobs, and even Shopify eCommerce stores. The balance in my designs stems from a keen appreciation of functionality alongside visual appeal, in addition to mobile usability and responsiveness, and cross browser functionality.
+</p>
+<p>
+Problem solving in a UI/UX context and developing solutions that are easy to use is one of my main interests. My fluency in English alongside being an Urdu native allows me to interact with a wider range of clients which enhances my professional practice. I am constantly looking to grow and constantly looking for opportunities to learn and add value to the project scope, be it small or at the enterprise level, is completely unbothered.
+</p>
+
+      <p>🧠 I'm passionate about UI/UX, client communication, and continuous learning. I'm fluent in English and a native speaker of Urdu.</p>
+    </div>
+    <div class="about-image">
+<img src="About Me.webp" width="600" height="50" alt="Muhammad Usama Amjad">
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="exp-boxes">
+        <div class="exp-box">
+          <img src="pinterest-video.jpg" width="600px" height="1000px" alt="Active Apparel">
+          <h3>Frontend Developer</h3>
+          <p><strong>Company:</strong> Active Apparel International Pvt Ltd</p>
+          <p><strong>Duration:</strong> Feb 2023 – Present</p>
+          <p><strong>Description:</strong> Developed responsive interfaces for internal systems and B2B platforms. Focused on UI performance, scalability, and design consistency.</p>
+        </div>
+        <div class="exp-box">
+          <img src="Introduction to Front-End Development Certificate-1.png" width="700px" height="60px" alt="Meta Certified">
+          <h3>Certified Frontend Developer</h3>
+          <p><strong>Platform:</strong> Meta</p>
+          <p><strong>Course:</strong> Meta Frontend Developer Professional Certificate</p>
+          <p><strong>Skills Gained:</strong> HTML, CSS, JavaScript, React, Git, and Figma design tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Recent Projects</h2>
+    <div class="exp-boxes">
+
+      <div class="exp-box">
+        <img src="BioShine.jpg" alt="Bioshine.nl">
+        <h3>Bioshine.nl – Corporate Website</h3>
+        <p><strong>Role:</strong> Frontend Developer</p>
+        <p><strong>Tech:</strong> HTML5, CSS3, JavaScript (ES6+), React.js</p>
+        <p><strong>Details:</strong> Created a polished corporate website for a Dutch client via Upwork. Focused on clean layouts, multilingual support, and performance.</p>
+      </div>
+
+      <div class="exp-box">
+        <img src="placeit 1.png " width="700px" height="60px" alt="Cotton Haust">
+        <h3>Cotton Haust – Shopify Store</h3>
+        <p><strong>Role:</strong> Web Designer & Developer</p>
+        <p><strong>Tech:</strong> Shopify, Liquid, HTML, CSS, Canva, Photoshop</p>
+        <p><strong>Details:</strong> Designed and developed a full Shopify store for a local fashion brand. Customized themes, created visual assets, and optimized for mobile.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-logos">
+        <img src="pngs/pngwing.com (1).png"  alt="HTML">
+        <img src="c:\Users\Muhammad Usama Amjad\Downloads\pngwing.com (3).png"   alt="CSS">
+        <img src="pngs/js.png" alt="JavaScript">
+        <img src="pngs/React.png" alt="React">
+        <img src="pngs/Bootstrap.png" alt="Bootstrap">
+        <img src="pngs/Wordpress.png" alt="WordPress">
+        <img src="pngs/Shopify.png" alt="Shopify">
+        <img src="phython.png" alt="Python">
+        <img src="pngs/C++.png" alt="C++">
+        <img src="pngs/SQL.png" alt="SQL">
+        <img src="pngs/OOP.png" alt="OOP">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-flex">
+    <div class="footer-left">
+      <h3>Muhammad Usama Amjad</h3>
+      <p>Frontend Developer & AI Student | Meta Certified</p>
+      <p><i class="fas fa-map-marker-alt"></i> Lahore, Pakistan</p>
+      <p><i class="fas fa-envelope"></i> usamaamjad1579@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +92 313 8449715</p>
+    </div>
+    <div class="footer-right">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cv.pdf" download>Download CV</a></li>
+      </ul>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/muhammad-usama-amjad-409b39363/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:usamaamjad1579@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="tel:+923138449715"><i class="fa fa-phone"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Muhammad Usama Amjad. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
